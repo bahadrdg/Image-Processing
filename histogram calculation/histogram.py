@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 foto = cv2.imread("kopek.jpeg",0) 
 h = [0] * 256
-for x in range(foto.shape[0]):      #histogram hesaplaması yapıyoruz
+for x in range(foto.shape[0]):      
     for y in range(foto.shape[1]):
         i = foto[x, y]
         h[i] = h[i] + 1
